@@ -15,31 +15,18 @@
         padding: 0;
         list-style: none;
         display: flex;
-
-        li {
-            font-style: 14px;
-            margin-right: 50px;
-            padding: 7px;
-            border-radius: 10px;
-            cursor: pointer;
-
-            &.active {
-                background-color: $mainColor;
-                color: white;
-            }
-        }
     }
 
     .container {
-        width: 70%;
+        width: 40%;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
 
         .item {
-            width: 200px;
-            height: 150px;
+            width: 250px;
+            height: 225px;
             border-radius: 20px;
             border: 3px solid rgb(223, 187, 187);
             margin: 10px 20px;
