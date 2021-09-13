@@ -6,6 +6,10 @@
     justify-content: center;
     position: relative;
 
+    @include mobile {
+        align-items: flex-start;
+    }
+
     .arrow {
         height: 60px;
         position: absolute;
@@ -34,18 +38,18 @@
         transition: all 1s ease-in-out;
 
         @include mobile {
-            height: 100vh;
+            height: 80vh;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
         }
 
         .container {
             width: 100vw;
-            height: 80%;
+            height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
-
             .item {
                 width: 50vw;
                 height: 19vw;
@@ -58,7 +62,7 @@
 
                 @include mobile {
                     width: 90%;
-                    height: 80%;
+                    height: 70%;
                 }
 
                 .left {
