@@ -6,10 +6,7 @@
     justify-content: center;
     position: relative;
 
-    @include mobile {
-        align-items: flex-start;
-    }
-
+    height: 80vh;
     .arrow {
         height: 60px;
         position: absolute;
@@ -62,7 +59,7 @@
 
                 @include mobile {
                     width: 90%;
-                    height: 70%;
+                    height: 90%;
                 }
 
                 .left {
