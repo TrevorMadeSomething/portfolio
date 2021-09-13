@@ -1,9 +1,14 @@
 $mainColor: #390f7e;
 
 $breakPointWidth: 1000px;
-
+$breakPointMinWidth: 1440px;
 @mixin mobile {
     @media (max-width: #{$breakPointWidth}) {
+        @content;
+    }
+}
+@mixin big {
+    @media (min-width: #{$breakPointMinWidth}) {
         @content;
     }
 }
