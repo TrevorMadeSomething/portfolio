@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 $fontSizeMain: 30px;
 
 .contact {
@@ -28,16 +30,28 @@ $fontSizeMain: 30px;
         .fieldContainer {
             display: flex;
             flex-direction: column;
+            align-items: center;
+            @include mobile {
+                width: 100%;
+            }
 
             .name {
                 margin-top: 15px;
                 background-color: lightgray;
                 border: none;
+                @include mobile {
+                    width: 100%;
+                    max-width: 250px;
+                }
             }
             .email {
                 margin-top: 15px;
                 background-color: lightgray;
                 border: none;
+                @include mobile {
+                    width: 100%;
+                    max-width: 250px;
+                }
             }
         }
     }
@@ -48,6 +62,10 @@ $fontSizeMain: 30px;
         align-items: center;
         justify-content: flex-start;
         margin-top: 15px;
+
+        @include mobile {
+            width: 100%;
+        }
     }
 
     form {
@@ -77,6 +95,11 @@ $fontSizeMain: 30px;
             font-size: 14px;
             background-color: lightgray;
             border: none;
+
+            @include mobile {
+                width: 100%;
+                max-width: 350px;
+            }
         }
 
         button {
