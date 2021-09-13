@@ -1,3 +1,107 @@
 .works {
-    background-color: lightgreen;
+    background-color: crimson;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .arrow {
+        height: 60px;
+        position: absolute;
+        cursor: pointer;
+
+        &.left {
+            left: 150px;
+            transform: rotateY(180deg);
+        }
+
+        &.right {
+            right: 150px;
+        }
+    }
+
+    .slider {
+        height: 650px;
+        display: flex;
+        position: absolute;
+        left: 0;
+
+        transition: all 1s ease-in-out;
+
+        .container {
+            width: 100vw;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .item {
+                width: 50vw;
+                height: 19vw;
+                background-color: white;
+                border-radius: 20px;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .left {
+                    flex: 4;
+                    height: 80%;
+
+                    .leftContainer {
+                        width: 90%;
+                        height: 70%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 10px;
+
+                        .imgContainer {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            background-color: rgb(245, 185, 164);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            img {
+                                width: 25px;
+                            }
+                        }
+
+                        h2 {
+                            font-size: 1vw;
+                        }
+                        p {
+                            font-size: 0.6vw;
+                            text-align: center;
+                        }
+                        span {
+                            font-size: 0.6vw;
+                            font-weight: 600;
+                            text-decoration: underline;
+
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .right {
+                    flex: 8;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    overflow: hidden;
+
+                    img {
+                        width: 600px;
+                        transform: rotate(-10deg);
+                    }
+                }
+            }
+        }
+    }
 }
