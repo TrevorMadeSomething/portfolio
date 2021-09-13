@@ -16,6 +16,10 @@
         display: flex;
         align-items: center;
 
+        @include mobile {
+            max-height: 550px;
+        }
+
         .imgWrapper {
             width: 30vw;
             height: 30vw;
@@ -53,6 +57,7 @@
 
             @include mobile {
                 text-align: center;
+                justify-content: flex-start;
             }
             h1 {
                 font-size: 60px;
