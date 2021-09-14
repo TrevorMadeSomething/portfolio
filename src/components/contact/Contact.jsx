@@ -39,7 +39,7 @@ export default function Contact() {
                     </div>
                     <div className="right">
                         <textarea name="message" className="messageBox" placeholder="Message" />
-                        <input type="submit" className="btn" value="Send" />
+                        <input type="submit" className={!message ? "btn" : "sentBtn"} value="Send" />
                         {message && <span>Thank you, I will reply ASAP</span>}
                     </div>
                 </div>

@@ -107,10 +107,24 @@ $fontSizeMain: 30px;
             height: 30px;
             color: white;
             border: none;
-            background-color: rgb(160, 0, 32);
+            background-color: rgb(202, 35, 68);
             border-radius: 10px;
             font-weight: 500;
             cursor: pointer;
+            -webkit-appearance: none;
+            opacity: 1;
+        }
+        .sentBtn {
+            width: 150px;
+            height: 30px;
+            color: white;
+            border: none;
+            background-color: rgb(201, 157, 166);
+            border-radius: 10px;
+            font-weight: 500;
+            cursor: pointer;
+            -webkit-appearance: none;
+            opacity: 1;
         }
 
         span {
