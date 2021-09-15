@@ -11,9 +11,9 @@ export const featuredPortfolio = [
         id: 2,
         title: "Rampa UI Design",
         img:
-            "https://cdn.dribbble.com/users/702789/screenshots/15054318/media/4ea5d492b7b07eebc9528ff960794879.png?compress=1&resize=1200x900",
+            "https://i.imgur.com/nupqBSK.png",
         a:
-            "#",
+            "https://tip-calculator-app-main.herokuapp.com/",
     },
     {
         id: 3,
