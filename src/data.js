@@ -9,7 +9,7 @@ export const featuredPortfolio = [
     },
     {
         id: 2,
-        title: "Rampa UI Design",
+        title: "Tip Calculator App",
         img:
             "https://i.imgur.com/nupqBSK.png",
         a:
