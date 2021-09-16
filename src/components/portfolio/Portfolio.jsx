@@ -6,7 +6,6 @@ import {
   webPortfolio,
   mobilePortfolio,
   designPortfolio,
-  contentPortfolio,
 } from "../../data";
 export default function Portfolio() {
   const [selected, setSelected] = useState("featured");
@@ -45,9 +44,6 @@ export default function Portfolio() {
       case "design":
         setData(designPortfolio);
         break;
-      case "content":
-        setData(contentPortfolio);
-        break;
       default:
         setData(featuredPortfolio);
     }
@@ -69,7 +65,7 @@ export default function Portfolio() {
       <div className="container">
         {data.map((data) => (
           <div className="item">
-            <a href={data.a} target="_blank">
+            <a href={data.a} target="_blank" rel="noreferrer">
               <img src={data.img} alt="" />
             </a>
             <h3>{data.title}</h3>
