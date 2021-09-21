@@ -69,9 +69,17 @@
         font-size: 20px;
       }
 
+      a {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       img {
-        width: 90%;
-        height: 90%;
+        border-radius: 15px;
+        width: 95%;
+        height: 95%;
         object-fit: cover;
         z-index: 1;
         overflow: hidden;
