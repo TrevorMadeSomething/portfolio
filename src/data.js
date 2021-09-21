@@ -15,6 +15,17 @@ export const featuredPortfolio = [
         a:
             "https://tip-calculator-app-main.herokuapp.com/",
     },
+    {
+        id: 3,
+        title: "Podcasts Landing Page",
+        img:
+            "https://i.imgur.com/Vqdzkt7.png",
+        a:
+            "https://pod-landing.herokuapp.com/",
+    },
+
+
+
 ];
 
 export const webPortfolio = [
@@ -33,6 +44,14 @@ export const webPortfolio = [
             "https://i.imgur.com/nupqBSK.png",
         a:
             "https://tip-calculator-app-main.herokuapp.com/",
+    },
+    {
+        id: 3,
+        title: "Podcasts Landing Page",
+        img:
+            "https://i.imgur.com/Vqdzkt7.png",
+        a:
+            "https://pod-landing.herokuapp.com/",
     },
 ];
 
