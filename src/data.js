@@ -64,6 +64,15 @@ export const mobilePortfolio = [
         a:
             "https://tip-calculator-app-main.herokuapp.com/",
     },
+    {
+        id: 2,
+        title: "Podcasts Landing Page",
+        img:
+            "https://i.imgur.com/Vqdzkt7.png",
+        a:
+            "https://pod-landing.herokuapp.com/",
+    },
+
 
 ];
 
