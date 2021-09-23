@@ -13,18 +13,22 @@ export default function Portfolio() {
 
   const list = [
     {
+      key: 1,
       id: "featured",
       title: "Featured",
     },
     {
+      key: 2,
       id: "web",
       title: "Web App",
     },
     {
+      key: 3,
       id: "mobile",
       title: "Mobile App",
     },
     {
+      key: 4,
       id: "design",
       title: "Design",
     },
@@ -59,6 +63,7 @@ export default function Portfolio() {
             active={selected === item.id}
             setSelected={setSelected}
             id={item.id}
+            key={item.id}
           />
         ))}
       </ul>

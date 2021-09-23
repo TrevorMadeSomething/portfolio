@@ -22,9 +22,9 @@ export default function Intro() {
 
   return (
     <div className="largeIntro">
-      <div class="background-container">
-        <div class="stars"></div>
-        <div class="twinkling"></div>
+      <div className="background-container">
+        <div className="stars"></div>
+        <div className="twinkling"></div>
       </div>
       <div className="intro" id="intro">
         <a href="#portfolio" className="downArrow">
