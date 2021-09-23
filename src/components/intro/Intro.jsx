@@ -21,22 +21,23 @@ export default function Intro() {
   }, []);
 
   return (
-    <div className="intro" id="intro">
-      <div className="left">
-        <div className="imgWrapper">
-          <img src="assets/me.jpg" alt="man" />
-        </div>
+    <div className="largeIntro">
+      <div class="background-container">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
       </div>
-      <div className="right">
-        <div className="wrapper">
-          <h2>Hi There, I'm</h2>
-          <h1>Trevor Jarvis</h1>
-          <h3>
-            Freelance <span ref={textRef}></span>
-          </h3>
-          <a href="#portfolio">
-            <ExpandMoreIcon style={{ fontSize: 80 }} />
-          </a>
+      <div className="intro" id="intro">
+        <a href="#portfolio" className="downArrow">
+          <ExpandMoreIcon style={{ fontSize: 80 }} />
+        </a>
+        <div className="right">
+          <div className="wrapper">
+            <h2>Hi There, I'm</h2>
+            <h1>Trevor Jarvis</h1>
+            <h3>
+              Freelance <span ref={textRef}></span>
+            </h3>
+          </div>
         </div>
       </div>
     </div>
