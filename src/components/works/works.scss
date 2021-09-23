@@ -69,13 +69,13 @@
 
           .leftContainer {
             width: 90%;
-            height: 70%;
+            height: 80%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
             padding: 10px;
-
+            overflow: hidden;
             .imgContainer {
               width: 40px;
               height: 40px;
@@ -84,23 +84,31 @@
               display: flex;
               align-items: center;
               justify-content: center;
+              @include mobile {
+                width: 30px;
+                height: 30px;
+              }
 
               img {
                 width: 25px;
+                @include mobile {
+                  width: 18px;
+                  height: 18px;
+                }
               }
             }
 
             h2 {
               font-size: 1vw;
               @include mobile {
-                font-size: 10px;
+                font-size: 8px;
               }
             }
             p {
               font-size: 0.6vw;
               text-align: center;
               @include mobile {
-                font-size: 10px;
+                font-size: 8px;
               }
             }
             span {
@@ -110,7 +118,7 @@
 
               cursor: pointer;
               @include mobile {
-                font-size: 10px;
+                font-size: 8px;
               }
             }
           }
