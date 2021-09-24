@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss";
 import {
@@ -54,29 +55,31 @@ export default function Portfolio() {
   }, [selected]);
 
   return (
-    <div className="portfolio" id="portfolio">
-      <h1>Portfolio</h1>
-      <ul>
-        {list.map((item) => (
-          <PortfolioList
-            title={item.title}
-            active={selected === item.id}
-            setSelected={setSelected}
-            id={item.id}
-            key={item.id}
-          />
-        ))}
-      </ul>
-      <div className="container">
-        {data.map((data) => (
-          <div className="item">
-            <a href={data.a} target="_blank" rel="noreferrer">
-              <img src={data.img} alt="" />
-              <h3 href={data.a}>{data.title}</h3>
-            </a>
-          </div>
-        ))}
+    <>
+      <div className="portfolio" id="portfolio">
+        <h1>Portfolio</h1>
+        <ul>
+          {list.map((item) => (
+            <PortfolioList
+              title={item.title}
+              active={selected === item.id}
+              setSelected={setSelected}
+              id={item.id}
+              key={item.id}
+            />
+          ))}
+        </ul>
+        <div className="container">
+          {data.map((data) => (
+            <div className="item">
+              <a href={data.a} target="_blank" rel="noreferrer">
+                <img src={data.img} alt="" />
+                <h3 href={data.a}>{data.title}</h3>
+              </a>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
