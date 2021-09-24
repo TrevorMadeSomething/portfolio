@@ -9,7 +9,7 @@ import { useSpring, animated } from "react-spring";
 import { useState, useCallback } from "react";
 import Menu from "./components/menu/Menu";
 
-function Text({ children, offset, pos, start, end, leftRightValue }) {
+function Text({ children, offset, pos, start, end, leftRightValue, height }) {
   const [transform] = useState(() =>
     offset
       .to({
@@ -25,7 +25,7 @@ function Text({ children, offset, pos, start, end, leftRightValue }) {
     <animated.div
       style={{
         position: "absolute",
-        height: `${100}vh`,
+        height: `${height}vh`,
         left: 0,
         top: `${pos * 100}vh`,
         transform,
@@ -59,6 +59,7 @@ function App() {
           leftRightValue={400}
           start={1.3}
           end={1.9}
+          height={100}
           children={<Portfolio />}
         />
         <Text
@@ -66,6 +67,7 @@ function App() {
           pos={2}
           start={3}
           end={4}
+          height={100}
           leftRightValue={-400}
           topDownValue={0}
           children={<Works />}
@@ -73,9 +75,10 @@ function App() {
         <Text
           offset={scroll}
           pos={3}
-          start={5}
+          start={4}
           leftRightValue={400}
-          end={5.5}
+          end={5}
+          height={50}
           children={<Contact />}
         />
       </div>
