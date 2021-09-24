@@ -55,8 +55,8 @@ function App() {
         <Text
           offset={scroll}
           pos={1}
-          start={1}
-          end={1.7}
+          start={1.3}
+          end={1.9}
           children={<Portfolio />}
         />
         <Text offset={scroll} pos={2} start={3} end={4} children={<Works />} />
