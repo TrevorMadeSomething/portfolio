@@ -41,6 +41,7 @@ function App() {
   const [{ scroll }, set] = useSpring(() => ({ scroll: 0 }));
   const onScroll = useCallback(
     (e) => void set({ scroll: e.target.scrollTop / (window.innerHeight / 2) }),
+    // eslint-disable-next-line
     []
   );
   return (
