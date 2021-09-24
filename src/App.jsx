@@ -9,17 +9,18 @@ import { useSpring, animated } from "react-spring";
 import { useState, useCallback } from "react";
 import Menu from "./components/menu/Menu";
 
-function Text({ children, offset, pos, start, end }) {
+function Text({ children, offset, pos, start, end, leftRightValue }) {
   const [transform] = useState(() =>
     offset
-      .interpolate({
+      .to({
         range: [start, end],
-        output: [100, 0],
+        output: [leftRightValue, 0],
         extrapolate: "clamp",
       })
-      .interpolate((s) => `translate3d(${s}px,0,0)`)
+      .to((s) => `translate3d(${s}px,0,0)`)
   );
-  const [opacity] = useState(() => offset.interpolate([start, end], [0, 1]));
+
+  const [opacity] = useState(() => offset.to([start, end], [0, 1]));
   return (
     <animated.div
       style={{
@@ -55,15 +56,25 @@ function App() {
         <Text
           offset={scroll}
           pos={1}
+          leftRightValue={400}
           start={1.3}
           end={1.9}
           children={<Portfolio />}
         />
-        <Text offset={scroll} pos={2} start={3} end={4} children={<Works />} />
+        <Text
+          offset={scroll}
+          pos={2}
+          start={3}
+          end={4}
+          leftRightValue={-400}
+          topDownValue={0}
+          children={<Works />}
+        />
         <Text
           offset={scroll}
           pos={3}
           start={5}
+          leftRightValue={400}
           end={5.5}
           children={<Contact />}
         />
