@@ -78,7 +78,7 @@ function App() {
           start={4}
           leftRightValue={400}
           end={5}
-          height={50}
+          height={70}
           children={<Contact />}
         />
       </div>
