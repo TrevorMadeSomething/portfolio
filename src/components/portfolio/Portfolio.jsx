@@ -12,11 +12,11 @@ export default function Portfolio() {
   const [data, setData] = useState([]);
 
   const list = [
-    {
-      key: 1,
-      id: "featured",
-      title: "Featured",
-    },
+    // {
+    //   key: 1,
+    //   id: "featured",
+    //   title: "Featured",
+    // },
     {
       key: 2,
       id: "web",
@@ -27,27 +27,27 @@ export default function Portfolio() {
       id: "mobile",
       title: "Mobile App",
     },
-    {
-      key: 4,
-      id: "design",
-      title: "Design",
-    },
+    // {
+    //   key: 4,
+    //   id: "design",
+    //   title: "Design",
+    // },
   ];
 
   useEffect(() => {
     switch (selected) {
-      case "featured":
-        setData(featuredPortfolio);
-        break;
+      // case "featured":
+      //   setData(featuredPortfolio);
+      //   break;
       case "web":
         setData(webPortfolio);
         break;
       case "mobile":
         setData(mobilePortfolio);
         break;
-      case "design":
-        setData(designPortfolio);
-        break;
+      // case "design":
+      //   setData(designPortfolio);
+      //   break;
       default:
         setData(featuredPortfolio);
     }
