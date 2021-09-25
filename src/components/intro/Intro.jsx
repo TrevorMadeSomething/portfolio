@@ -16,6 +16,10 @@ export default function Intro() {
         "CSS/HTML Developer",
         "Front-End Web Designer",
         "React Developer",
+        "Figma Designer",
+        "React Native Developer",
+        "Dog Lover",
+        "Full-stack Developer",
       ],
     });
   }, []);
