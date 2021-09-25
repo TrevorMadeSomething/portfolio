@@ -17,7 +17,7 @@ function Text({ children, offset, pos, start, end, leftRightValue, height }) {
         output: [leftRightValue, 0],
         extrapolate: "clamp",
       })
-      .to((s) => `translate3d(${s}px,0,0)`)
+      .to((s) => `translate3d(0,0,${s}px)`)
   );
 
   const [opacity] = useState(() => offset.to([start, end], [0, 1]));
